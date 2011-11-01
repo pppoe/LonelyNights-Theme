@@ -1,15 +1,101 @@
 body {
-    background-color: #151515;
+    background-color: #161616;
 }
 
 .lonelynights {
+    padding: 0px;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .lonelynights .seperator {
-    padding: 0px;
-    margin: 0px;
-    height: 0px;
     border-top: 1px solid #090909;
     border-bottom: 1px solid #1f1f1f;
 }
 
+.lonelynights .subseperator {
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.lonelynights .subseperatorpair {
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #101010;
+}
+
+.lonelynights .topsec {
+    font-family: "Georgia";
+    margin: 0 auto;
+    color: #a1a1a1;
+    text-shadow: black 5px 10px 5px;
+    width: 400px;
+}
+
+.lonelynights .topsec h1 {
+    font-size: 250%;
+}
+
+.lonelynights .topsec h2 {
+    font-size: 100%;
+    text-align: right;
+}
+
+.lonelynights .topsec h3 {
+    font-size: 80%;
+    text-align: left;
+    margin: -16px 0px 0px 5px;
+}
+
+.lonelynights .content {
+    color: #dfdfdf;
+    text-shadow: black 0px -1px 0px;
+}
+
+.lonelynights .content .post {
+    padding: 0px 18%;
+}
+
+.lonelynights .content .post h1 {
+}
+
+.lonelynights .content .post h2 {
+    font-size: 100%;
+    margin: -10px 0px 8px 0px;
+}
+
+.lonelynights .content .post p {
+    font-size: 105%;
+    padding: 0px 0%;
+}
+
+.lonelynights .navigation {
+    height: 40px;
+    padding: 10px 18%;
+}
+
+.lonelynights .navigation .older{
+    float: left;
+}
+
+.lonelynights .navigation .newer{
+    float: right;
+    height: 40px;
+}
+
+.lonelynights .bottomsec {
+    color: #a1a1a1;
+    text-shadow: black 0px -2px 0px;
+}
+
+.lonelynights .bottomsec .table {
+    border: 0px;
+    float: left;
+}
+
+.lonelynights .bottomsec .list {
+    float: left;
+}
+
+.lonelynights .bottomsec .list h3 {
+    padding: 0px 0px 0px 18px;
+}
