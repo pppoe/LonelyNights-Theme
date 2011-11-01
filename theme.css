@@ -88,8 +88,24 @@ body {
 }
 
 .lonelynights .bottomsec .table {
+    margin: 0px 10px;
     border: 0px;
-    float: left;
+    float: right;
+}
+
+.lonelynights .bottomsec .table a {
+    text-decoration: none;
+}
+
+.lonelynights .bottomsec .table tr {
+    height: 50px;
+}
+
+.lonelynights .bottomsec .table img {
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 5px 0px;
 }
 
 .lonelynights .bottomsec .list {
