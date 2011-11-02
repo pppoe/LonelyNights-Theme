@@ -51,8 +51,8 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-    <div id="header">
-        <div class=lonelynights>
+    <div class=lonelynights>
+        <div id="header">
             <div class=topsec>
                 <h1>
                     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -61,11 +61,10 @@
                     <div id="site-description"><?php bloginfo( 'description' ); ?></div>
                 </h3>
             </div><!-- #topsec -->
-        </div><!-- #lonelynights -->
-    </div><!-- #header -->
 
-    <div class=seperator>
-        <span></span>
-    </div>
+            <div class=seperator>
+                <span></span>
+            </div>
+        </div><!-- #header -->
 
-    <div id="main">
+        <div id="main">
