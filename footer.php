@@ -18,14 +18,22 @@
                 <table>
                     <tr>
                         <td> 
-                            <span class=image> <img src="./png/twitter.png"></img> </span>
-                            <span class=desc> <a href="">Follow Me On Twitter</a> </span>
+                            <a href="">
+                                <span class=image>
+                                    <img src="<?php bloginfo('template_directory'); ?>/png/twitter.png"></img> 
+                                </span>
+                                <span class=desc> Follow Me On Twitter </span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
                         <td> 
-                            <span class=image> <img src="./png/facebook.png"></img> </span>
-                            <span class=desc> <a href="">Friend Me On FB</a> </span>
+                            <a href="">
+                                <span class=image>
+                                    <img src="<?php bloginfo('template_directory'); ?>/png/facebook.png"></img> 
+                                </span>
+                                <span class=desc> Friend Me On FB </span>
+                            </a>
                         </td>
                     </tr>
                 </table>
@@ -34,14 +42,22 @@
                 <table>
                     <tr>
                         <td> 
-                            <span class=image> <img src="./png/gplus.png"></img> </span>
-                            <span class=desc> <a href="">Circle Me On GPlus</a> </span>
+                            <a href="">
+                                <span class=image>
+                                    <img src="<?php bloginfo('template_directory'); ?>/png/gplus.png"></img> 
+                                </span>
+                                <span class=desc> Circle Me On GPlus</span>
+                            </a> 
                         </td>
                     </tr>
                     <tr>
                         <td> 
-                            <span class=image> <img src="./png/gmail.png"></img> </span>
-                            <span class=desc> <a href="">Contact Me By Gmail</a> </span>
+                            <a href="">
+                                <span class=image>
+                                    <img src="<?php bloginfo('template_directory'); ?>/png/gmail.png"></img> 
+                                </span>
+                                <span class=desc> Contact Me By Gmail </span>
+                            </a>
                         </td>
                     </tr>
                 </table>
@@ -51,8 +67,12 @@
                 <table>
                     <tr>
                         <td> 
-                            <span class=image> <img src="./png/rss.png"></img> </span>
-                            <span class=desc> <a href="">Subscribe Me</a> </span>
+                            <a href="">
+                                <span class=image>
+                                    <img src="<?php bloginfo('template_directory'); ?>/png/rss.png"></img> 
+                                </span>
+                                <span class=desc> Subscribe Me </span>
+                            </a>
                         </td>
                     </tr>
                 </table>

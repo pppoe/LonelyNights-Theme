@@ -77,6 +77,18 @@ body {
     padding: 0px 18%;
 }
 
+.lonelynights .content .post a {
+    text-decoration: none;
+}
+
+.lonelynights .content .post a:visited {
+    color: #808080;
+}
+
+.lonelynights .content .post a:link {
+    color: #989898;
+}
+
 .lonelynights .content .post h1 {
 }
 
