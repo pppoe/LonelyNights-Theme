@@ -18,7 +18,7 @@
                 <table>
                     <tr>
                         <td> 
-                            <a href="">
+                            <a href="https://twitter.com/mr_pppoe">
                                 <span class=image>
                                     <img src="<?php bloginfo('template_directory'); ?>/png/twitter.png"></img> 
                                 </span>
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <td> 
-                            <a href="">
+                            <a href="https://www.facebook.com/mr.pppoe">
                                 <span class=image>
                                     <img src="<?php bloginfo('template_directory'); ?>/png/facebook.png"></img> 
                                 </span>
@@ -42,7 +42,7 @@
                 <table>
                     <tr>
                         <td> 
-                            <a href="">
+                            <a href="https://plus.google.com/111168737032894110254">
                                 <span class=image>
                                     <img src="<?php bloginfo('template_directory'); ?>/png/gplus.png"></img> 
                                 </span>
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <td> 
-                            <a href="">
+                            <a href="mailto:mr.pppoe@gmail.com">
                                 <span class=image>
                                     <img src="<?php bloginfo('template_directory'); ?>/png/gmail.png"></img> 
                                 </span>
@@ -67,7 +67,7 @@
                 <table>
                     <tr>
                         <td> 
-                            <a href="">
+                            <a href="/feed">
                                 <span class=image>
                                     <img src="<?php bloginfo('template_directory'); ?>/png/rss.png"></img> 
                                 </span>
@@ -79,23 +79,21 @@
             </div>
 
             <div class=list>
-                <h3> Categories </h3>
-                <ul>
-                    <li> Lorem Mauris felis </li>
-                    <li> Lorem felis </li>
-                    <li> Mauris felis </li>
-                    <li> felis </li>
-                </ul>
+                <h3> About Me </h3>
+                <p>
+					<?php if (have_posts()) : the_post();
+					the_author_description();
+					endif;
+					rewind_posts(); ?>
+                </p>
             </div>
-            <div class=list>
-                <h3> Archive </h3>
-                <ul>
-                    <li> Lorem Mauris felis </li>
-                    <li> Lorem felis </li>
-                    <li> Mauris felis </li>
-                    <li> felis </li>
-                </ul>
-            </div>
+
+        </div>
+
+        <br clear="all"/>
+
+        <div class=credit>
+            <p> Theme Designed by <a href="http://haoxiang.org"><strong>Haoxiang Li</strong></a> </p>
         </div>
 
     </div><!-- #lonelynights -->

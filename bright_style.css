@@ -19,7 +19,8 @@
 }
 
 body {
-    background-image:url('png/wood_1.png');
+    /*background-image:url('png/wood_1.png');*/
+    background-image:url('png/brushed_alu_dark.png');
     background-repeat:repeat;
 }
 
@@ -44,8 +45,8 @@ body {
 }
 
 .lonelynights .subseperatorpair {
-    border-top: 1px solid #0c0c0c;
-    border-bottom: 1px solid #2c2c2c;
+    border-bottom: 1px solid #01010c;
+    border-top: 1px solid #01012c;
     /*border-top: 1px solid #1f1f1f;*/
     /*border-bottom: 1px solid #101010;*/
 }
@@ -81,15 +82,8 @@ body {
     margin: -16px 0px 16px 5px;
 }
 
-.lonelynights .topsec #toggle-list {
-    font-size: 80%;
-    text-align: right;
-    margin: -16px 0px -8px 0px;
-    text-shadow: black 2px 5px 2px;
-}
-
 .lonelynights .content {
-    color: #efefef;
+    color: #dfdfdf;
     text-shadow: black 0px -1px 0px;
 }
 
@@ -129,14 +123,6 @@ body {
 
 .lonelynights .navigation a {
     text-decoration: none;
-}
-
-.lonelynights .navigation a:link {
-    color: #989898;
-}
-
-.lonelynights .navigation a:visited {
-    color: #808080;
 }
 
 .lonelynights .navigation .older{
@@ -192,7 +178,6 @@ body {
 .lonelynights .bottomsec .list {
     float: left;
     margin: -12px 10px 0px 10px;
-    width: 350px;
 }
 
 .lonelynights .bottomsec .list h3 {
@@ -231,19 +216,4 @@ body {
     padding: 0px 10px 0px 0px;
 }
 
-.lonelynights .credit {
-    color: white;
-    font-size: 80%;
-    margin: 0px 0px;
-    text-shadow: black 0px -2px 0px;
-}
-
-.lonelynights .credit p {
-    padding: 0px;
-    float: right;
-}
-
-.lonelynights .credit a {
-    text-decoration: none;
-}
 

@@ -7,11 +7,9 @@
 
 <?get_header(); ?>
 
-<?php query_posts( 'posts_per_page=3' ); ?>
-
 <div id="container" >
     <div id="content" role="main">
-        <div class=content>
+        <div class=content id="mainlist">
 
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -22,13 +20,17 @@
                 <div class=subseperator>
                     <span></span>
                 </div>
-                <p>
-                    <?php the_content(); ?>
-                </p>
-                </p>
-                <div class=subseperatorpair>
-                    <span></span>
+
+                <div class=postContent>
+                    <p>
+                        <?php the_content(); ?>
+                    </p>
+                    </p>
+                    <div class=subseperatorpair>
+                        <span></span>
+                    </div>
                 </div>
+
             </div>
 
             <?php endwhile ?>
