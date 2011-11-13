@@ -189,21 +189,6 @@ body {
     padding: 0px 10px 0px 0px;
 }
 
-.lonelynights .bottomsec .list {
-    float: left;
-    margin: -12px 10px 0px 10px;
-    width: 350px;
-}
-
-.lonelynights .bottomsec .list h3 {
-    padding: 0px 0px 0px 18px;
-}
-
-.lonelynights .bottomsec .list ul {
-    margin: -10px 0px 0px 18px;
-    padding: 0px 0px 0px 18px;
-}
-
 .lonelynights .bottomsec .entry {
     margin: 0px 10px;
     border: 0px;
@@ -236,14 +221,49 @@ body {
     font-size: 80%;
     margin: 0px 0px;
     text-shadow: black 0px -2px 0px;
+    float: right;
 }
 
 .lonelynights .credit p {
+    margin: 2px 0px;
     padding: 0px;
-    float: right;
+    text-align: right;
 }
 
 .lonelynights .credit a {
     text-decoration: none;
+}
+
+.lonelynights .linkstable {
+    list-style-type: none;
+    float: right;
+}
+
+.lonelynights .linkstable h2 {
+    display: none;
+}
+
+.lonelynights .linkstable ul {
+    margin: 10px 0px 0px -20px;
+    padding: 0px;
+}
+
+.lonelynights .bottomsec .list {
+    float: left;
+    margin: -12px 10px 0px 10px;
+    width: 250px;
+}
+
+.lonelynights .bottomsec .list p {
+    padding: 10px 0;
+}
+
+.lonelynights .bottomsec .list h3 {
+    padding: 0px 0px 0px 18px;
+}
+
+.lonelynights .bottomsec .list ul {
+    margin: -10px 0px 0px 18px;
+    padding: 0px 0px 0px 18px;
 }
 
