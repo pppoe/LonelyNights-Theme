@@ -7,42 +7,50 @@
 
 <?get_header(); ?>
 
-<div id="container" >
-    <div id="content" role="main">
-        <div class=content id="mainlist">
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-            <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
-
-            <div class=post>
-                <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h1>
-                <h2>In <?php the_category(', ') ?> on <?php the_time('j F Y') ?> with <?php comments_popup_link('no comments', '1 comment', '% comments'); ?></h2>
-                <div class=subseperator>
-                    <span></span>
+    <div class=block>
+        <div class=single-post>
+            <div class=post-title>
+                <div class=date>
+                    <h2><?php the_time('j F') ?></h2>
+                    <h2><?php the_category(', ') ?></h2>
                 </div>
-
-                <div class=postContent>
-                    <p>
-                        <?php the_content(); ?>
-                    </p>
-                    </p>
-                    <div class=subseperatorpair>
-                        <span></span>
-                    </div>
+                <div class=title>
+                    <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h1>
                 </div>
-
             </div>
-
-            <?php endwhile ?>
-            <?php endif ?>
-
-            <div class=navigation>
-                <span class="older"><?php next_posts_link('&larr; Older') ?></span>
-                <span class="newer"><?php previous_posts_link('Newer &rarr;') ?></span>
+            <div class=post-content>
+                <p> <?php the_content(); ?> </p>
             </div>
+        </div>
+    </div>
 
-        </div><!-- #content -->
-    </div><!-- #content -->
-</div><!-- #container -->
+    <?php endwhile ?>
+
+    <!-- Page Indicator -->
+    <div class=navigation>
+        <!--<span class="prev"><?php next_post_link('%link'); ?></span>-->
+        <span class="prev">
+            <?php 
+            next_posts_link('&#11013;');
+            ?>
+        </span>
+        <span class="middle">
+            <script type="text/javascript">
+                update = new Date(document.lastModified);
+                year = update.getFullYear();
+                document.write("Copyright &copy; 2012" + (year==2009 ? "" : ("-"+year)) + " Haoxiang Li.");
+            </script>
+        </span>
+        <span class="next">
+            <?php 
+            previous_posts_link('&#10145;') 
+            ?>
+        </span>
+    </div><!-- #navigation -->
+
+    <?php endif ?>
 
 <?php get_footer(); ?>

@@ -30,24 +30,10 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <script type="text/javascript">
-    function toggleVisible(divName){
-        var els = document.getElementsByClassName(divName);
-        var elsLen = els.length;
-        for (i = 0; i < elsLen; i++) {
-            var elemStyle = els[i].style;
-            if (elemStyle.display=="none"){
-                elemStyle.display="block";
-            }
-            else 
-            {
-                elemStyle.display="none";
-            }
-        }
-    }
+        var disqus_developer = 1;
     </script>
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -68,23 +54,18 @@
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
     <div class=lonelynights>
+
         <div id="header">
 
-            <div class=topsec>
-                <h1>
-                    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-                </h1>
-                <h3>
-                    <div id="site-description"><?php bloginfo( 'description' ); ?></div>
-                </h3>
-                <p>
-                    <div id="toggle-list"> <a href="javascript:toggleVisible('postContent')">List/Detail</a> </div>
-                </p>
-            </div><!-- #topsec -->
+            <div class="side-bar">
+                <div class=logo>
+                    <h1>
+                        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                    </h1>
+                </div><!-- #logo -->
 
-            <div class=seperator>
-                <span></span>
-            </div>
+            </div><!-- #side-bar -->
+
         </div><!-- #header -->
 
-        <div id="main">
+        <div class="main">
